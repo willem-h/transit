@@ -8,9 +8,11 @@
     "reduxsauce": "^0.7.0"
   },
   "devDependencies": {
-    "react-native-scripts": "1.7.0",
     "jest-expo": "^22.0.0",
-    "react-test-renderer": "16.0.0-beta.5"
+    "react-native-scripts": "1.7.0",
+    "react-test-renderer": "16.0.0-beta.5",
+    "reactotron-react-native": "^1.12.3",
+    "reactotron-redux": "^1.12.2"
   },
   "jest": {
     "preset": "jest-expo"
