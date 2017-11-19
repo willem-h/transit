@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Card from '../../components/card'
+import Card from '../../src/components/card'
 import styles from './styles'
 
 const GoCard = props => (
