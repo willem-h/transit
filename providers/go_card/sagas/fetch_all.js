@@ -1,6 +1,6 @@
 import { takeLatest } from 'redux-saga/effects'
 
-import { Types } from '../../../src/actions/providers'
+import { Types } from '../../actions'
 
 const start = function * () {
   console.log('We are in the sagas!!!!!')
