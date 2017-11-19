@@ -1,1 +1,1 @@
-export const getLoading = ({ provider_manager: { loading } }) => loading
+export const getLoading = ({ providerManager: { loading } }) => loading

@@ -1,7 +1,9 @@
 import { fork } from 'redux-saga/effects'
 
-import { fetchAll } from './fetch_all'
+import fetchAll from './fetch_all'
 
-export default function * () {
+const sagas = function * () {
   yield fork(fetchAll)
 }
+
+export default sagas

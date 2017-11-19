@@ -2,6 +2,8 @@ import { fork } from 'redux-saga/effects'
 
 import goCard from './go_card/sagas'
 
-export default function * () {
+const providers = function * () {
   yield fork(goCard)
 }
+
+export default providers
