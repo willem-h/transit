@@ -1,8 +1,7 @@
 import { createActions } from 'reduxsauce'
 
 const { Creators, Types } = createActions({
-  fetchAllStart: null,
-  fetchAllComplete: ['cards']
+  fetchComplete: ['balance', 'updatedAt']
 })
 
 export { Types }

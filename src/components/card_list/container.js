@@ -2,14 +2,18 @@ import { connect } from 'react-redux'
 
 import Actions from '../../../providers/actions'
 import Component from './component'
-import { getLoading } from '../../selectors/provider_manager'
+import { getCards, getLoading } from '../../selectors/provider_manager'
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = state => ({
+  items: getCards(state),
   loading: getLoading(state)
 })
 
-const mapDispatchToProps = (dispatch) => ({
+const mapDispatchToProps = dispatch => ({
   onRefresh: () => dispatch(Actions.fetchAllStart())
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(Component)
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Component)
