@@ -9,5 +9,8 @@ reducers and sagas in the following files:
 1. Reducers go in `providers/reducers/index.js`
 2. Sagas go in `providers/sagas/index.js`
 
+## Roadmap
+To keep up to date or to contribute ideas follow our [Trello board](https://trello.com/b/swsXWMgL/transit).
+
 ## More Info
 This app was created with [Create React Native App](https://github.com/react-community/create-react-native-app).
