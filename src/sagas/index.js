@@ -1,8 +1,8 @@
 import { fork } from 'redux-saga/effects'
 
-import providers from '../../providers'
+import providers from '../../providers/sagas'
 
-const root = function * () {
+const root = function*() {
   yield fork(providers)
 }
 
