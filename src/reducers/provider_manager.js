@@ -15,6 +15,7 @@ const fetchAllComplete = (state = initialState, { cards }) => ({
 
 const fetchAllStart = (state = initialState) => ({
   ...state,
+  cards: [],
   loading: true
 })
 
