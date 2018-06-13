@@ -2,7 +2,7 @@ import React from 'react'
 import cheerio from 'cheerio-without-node-native'
 import { put, select, takeLatest } from 'redux-saga/effects'
 
-import GoCard from '../component'
+import Card from '../card'
 import Actions, { Types } from '../../actions'
 import { getCardNumber, getPassword } from '../selectors'
 
@@ -31,7 +31,7 @@ const start = function*() {
   const password = yield select(getPassword)
   const { balance, updatedAt } = yield getDetails(cardNumber, password)
   yield put(
-    Actions.fetchAllComplete([<GoCard balance={balance} key={updatedAt} />])
+    Actions.fetchAllComplete([<Card balance={balance} key={updatedAt} />])
   )
 }
 
